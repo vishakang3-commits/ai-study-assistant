@@ -118,14 +118,15 @@ The application will start locally and can also be exposed using **ngrok** if re
 
 ### AI Chat
 <img width="1861" height="1005" alt="image" src="https://github.com/user-attachments/assets/5248ad5a-3c14-4fab-b341-bd7b9d3740bf" />
-- ❓ Revision Question Generator
+  - 💬 AI Chat Assistant               
 <img width="922" height="997" alt="Screenshot 2026-06-29 104418" src="https://github.com/user-attachments/assets/b981465d-c764-4978-9b4f-81ef91c3fcf0" />
-- 💬 AI Chat Assistant
+❓ Revision Question Generator
 <img width="1877" height="1013" alt="Screenshot 2026-06-29 104441" src="https://github.com/user-attachments/assets/80600bb9-5340-4b67-b297-3ff159bd7f9d" />
-- 📊 Google drive
+- 📊 Google drive  
 <img width="1907" height="1032" alt="image" src="https://github.com/user-attachments/assets/f25723ff-ba85-4783-8cc9-1cc37a3a7363" />
 
-- 📧 Gmail Notification<img width="1883" height="992" alt="image" src="https://github.com/user-attachments/assets/01a54677-94b2-417b-9e6c-e6d4e701ab44" />
+- 📧 Gmail Notification
+- <img width="1883" height="992" alt="image" src="https://github.com/user-attachments/assets/01a54677-94b2-417b-9e6c-e6d4e701ab44" />
 
   - 
   -   📊 Google Sheets Study Tracking
