@@ -109,6 +109,38 @@ The application will start locally and can also be exposed using **ngrok** if re
 
 ---
 
+## 📸 Screenshots
+
+### Home Page
+<img width="1918" height="960" alt="image" src="https://github.com/user-attachments/assets/3f0edf72-e134-48fd-879c-db7d1f231512" />
+
+
+
+### AI Chat
+<img width="1861" height="1005" alt="image" src="https://github.com/user-attachments/assets/5248ad5a-3c14-4fab-b341-bd7b9d3740bf" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## 🎯 Future Improvements
