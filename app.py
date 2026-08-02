@@ -3,13 +3,12 @@ import threading
 import time
 from flask import Flask, request, jsonify, render_template_string
 from flask_cors import CORS
-from pyngrok import ngrok
+
 import os
 
 # ── Keys ──
-OPENROUTER_API_KEY = "YOUR_OPENROUTER_API_KEY"
-MAKE_WEBHOOK_URL = "YOUR_MAKE_WEBHOOK_URL"
-NGROK_TOKEN = "YOUR_NGROK_AUTH_TOKEN"
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
+MAKE_WEBHOOK_URL = os.environ.get("MAKE_WEBHOOK_URL")
 MODEL = "google/gemma-4-26b-a4b-it:free"
 
 
@@ -283,24 +282,6 @@ def api_chat():
     return jsonify({"reply": reply})
 
 # ── Launch ──
-import os
-os.system("fuser -k 5004/tcp")
-time.sleep(1)
-
-print("✅ Flask app defined!")
-ngrok.kill()
-time.sleep(2)
-ngrok.set_auth_token(NGROK_TOKEN)
-
-def run_flask():
-    app.run(port=5004, use_reloader=False)
-
-t = threading.Thread(target=run_flask)
-t.daemon = True
-t.start()
-time.sleep(3)
-
-public_url = ngrok.connect(5004)
-print("=" * 50)
-print(f"🌐 YOUR APP URL: {public_url}")
-print("=" * 50)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
